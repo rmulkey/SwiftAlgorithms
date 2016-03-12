@@ -13,6 +13,7 @@
 		0D6454081C93ABFC00D0B542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6454071C93ABFC00D0B542 /* Assets.xcassets */; };
 		0D64540B1C93ABFC00D0B542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6454091C93ABFC00D0B542 /* LaunchScreen.storyboard */; };
 		0D6454161C93ABFC00D0B542 /* SwiftAgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6454151C93ABFC00D0B542 /* SwiftAgorithmsTests.swift */; };
+		0D6454211C93AFD600D0B542 /* wordCountFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0D6454201C93AFD600D0B542 /* wordCountFile.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		0D6454111C93ABFC00D0B542 /* SwiftAgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6454151C93ABFC00D0B542 /* SwiftAgorithmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAgorithmsTests.swift; sourceTree = "<group>"; };
 		0D6454171C93ABFC00D0B542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6454201C93AFD600D0B542 /* wordCountFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordCountFile.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				0D6454001C93ABFC00D0B542 /* AppDelegate.swift */,
 				0D6454021C93ABFC00D0B542 /* ViewController.swift */,
+				0D6454201C93AFD600D0B542 /* wordCountFile.txt */,
 				0D6454041C93ABFC00D0B542 /* Main.storyboard */,
 				0D6454071C93ABFC00D0B542 /* Assets.xcassets */,
 				0D6454091C93ABFC00D0B542 /* LaunchScreen.storyboard */,
@@ -179,6 +182,7 @@
 			files = (
 				0D64540B1C93ABFC00D0B542 /* LaunchScreen.storyboard in Resources */,
 				0D6454081C93ABFC00D0B542 /* Assets.xcassets in Resources */,
+				0D6454211C93AFD600D0B542 /* wordCountFile.txt in Resources */,
 				0D6454061C93ABFC00D0B542 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
