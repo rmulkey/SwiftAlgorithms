@@ -118,6 +118,7 @@ SWIFT_CLASS("_TtC14SwiftAgorithms14ViewController")
 - (NSDictionary<NSString *, NSNumber *> * __nonnull)wordCount:(NSString * __nonnull)text;
 - (void)testIsPalindrome;
 - (BOOL)palindromeCheck:(NSString * __nonnull)texInput;
+- (void)fizzBuzz:(NSInteger)totalNumber;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

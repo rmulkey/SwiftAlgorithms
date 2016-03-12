@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         
         testWordCountFuntion()
         testIsPalindrome()
+        fizzBuzz(100)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -81,6 +82,27 @@ class ViewController: UIViewController {
         }
    
     }
-
+    
+    func fizzBuzz(totalNumber: Int) {
+        for i in 1...totalNumber {
+            
+            var result: String = ""
+            
+            if i % 3 == 0 {
+                result += "Fizz"
+            }
+            
+            if i % 5 == 0 {
+                result += (result.isEmpty ? "" : " ") + "Buzz"
+            }
+            
+            if result.isEmpty {
+                result = String(i)
+            }
+            
+            print(result)
+        }
+    }
+    
 }
 
