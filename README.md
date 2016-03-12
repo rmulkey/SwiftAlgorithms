@@ -10,3 +10,4 @@ List of Algorithms (so far):
 
 - Simple word count;
 - Check if a string is a palindrome;
+- FizzBuzz
