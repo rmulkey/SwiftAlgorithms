@@ -19,7 +19,22 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func wordCount(text: String) -> Dictionary<String, Int> {
+        
+        let words = text.componentsSeparatedByCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        
+        var wordDictionary = Dictionary<String, Int>()
+        
+        for word in words {
+            if let count = wordDictionary[word] {
+                wordDictionary[word] = count+1
+            } else {
+                wordDictionary[word] = 1
+            }
+        }
+        return wordDictionary
+    }
 
 }
 
