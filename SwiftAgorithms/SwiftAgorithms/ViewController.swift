@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         testWordCountFuntion()
+        testIsPalindrome()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -25,16 +26,13 @@ class ViewController: UIViewController {
     
     func testWordCountFuntion() {
         
-        
         let path = NSBundle.mainBundle().pathForResource("wordCountFile", ofType: "txt")
         let text = try? String(contentsOfFile: path! as String, encoding: NSUTF8StringEncoding)
-                
+        
         //let testText: String = text as! String
                 
         wordCount(text!)
         
-        
-
     }
     
     func wordCount(text: String) -> Dictionary<String, Int> {
@@ -51,9 +49,37 @@ class ViewController: UIViewController {
             }
         }
         
-        print(wordDictionary)
+        //print(wordDictionary)
         
         return wordDictionary
+    }
+    
+    
+    func testIsPalindrome () {
+        
+        let testText1 = "tattarrattat" // The longest palindrome in the english language, according to the Oxford Dictionary
+        let testText2 = "not a palindrome"
+        
+        palindromeCheck(testText1);
+        palindromeCheck(testText2);
+        
+    }
+    
+    func palindromeCheck(texInput: String) -> Bool {
+        
+        let reverse = String(texInput.characters.reverse())
+    
+        if (reverse == texInput) {
+            
+            print("\(texInput) is a palindrome")
+            return true
+            
+        } else {
+            
+            print("\(texInput) is not a palindrome ")
+            return false
+        }
+   
     }
 
 }
