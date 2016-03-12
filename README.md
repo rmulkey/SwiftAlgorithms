@@ -8,4 +8,5 @@ I just created a single-view application and I'm going to create the functions o
 
 List of Algorithms (so far):
 
-- Simple word count
+- Simple word count;
+- Check if a string is a palindrome;
