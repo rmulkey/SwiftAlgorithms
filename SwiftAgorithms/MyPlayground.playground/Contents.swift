@@ -20,3 +20,34 @@ for number in squareArray {
     }
 }
 
+// Fibonacci Sequence
+
+var fibonacciArray = buildFibonacciArray(10)
+
+func buildFibonacciArray(n: Int) -> Array<Int>! {
+    
+    
+    //check trivial condition
+    guard n > 2 else {
+        return nil
+    }
+    
+    
+    //initialize the sequence
+    var sequence: Array<Int> = [0, 1]
+    
+    
+    var i: Int = sequence.count
+    
+    while i != n {
+        
+        let results: Int = sequence[i - 1] + sequence[i - 2]
+        sequence.append(results)
+        
+        i += 1
+    }
+    
+    
+    return sequence
+
+}
